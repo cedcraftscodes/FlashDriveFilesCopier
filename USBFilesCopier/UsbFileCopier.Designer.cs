@@ -35,6 +35,7 @@
             this.addToStartupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToStartupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,11 +76,21 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "An Application Created by Cedric Coloma";
+            // 
             // UsbFilesCopier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(434, 246);
+            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UsbFilesCopier";
             this.Text = "UsbFilesCopier";
@@ -87,6 +98,7 @@
             this.SizeChanged += new System.EventHandler(this.UsbFilesCopier_SizeChanged);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,6 +109,7 @@
         private System.Windows.Forms.ToolStripMenuItem addToStartupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeToStartupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
 
